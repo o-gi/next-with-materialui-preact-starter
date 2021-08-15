@@ -4,7 +4,7 @@ import Layout from "../components/Layouts/Layout";
 
 const HomePage: NextPage = () => {
   return (
-    <Layout headerBar="fixed" title="Next with Material-ui Preact Starter">
+    <Layout headerBar="fixed" title="Home">
       <Typography
         variant="h1"
         sx={{
