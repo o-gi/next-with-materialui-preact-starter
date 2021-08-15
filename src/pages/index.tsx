@@ -4,7 +4,7 @@ import Layout from "../components/Layouts/Layout";
 
 const HomePage: NextPage = () => {
   return (
-    <Layout headerBar="fixed" title="Home">
+    <Layout headerBar="fixed" title="home">
       <Typography
         variant="h1"
         sx={{

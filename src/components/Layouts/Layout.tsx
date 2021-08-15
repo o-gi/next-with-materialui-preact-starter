@@ -46,21 +46,21 @@ const HeaderBarFixed = (): JSX.Element => {
 type LayoutProps = {
   children: ReactNode;
   headerBar?: "primary" | "fixed" | "none";
-  title?: string;
+  title?: string | undefined;
 };
 
 const Layout = ({ children, headerBar, title }: LayoutProps): JSX.Element => {
   const getTitle = () => {
-    const sp = "&nbsp";
-    if (title !== undefined) {
-      return sp + "|" + sp + title;
+    const siteName = "Next with Material-ui Preact Starter";
+    if (title === undefined) {
+      return siteName;
     }
-    return null;
+    return `${title} - ${siteName}`;
   };
   return (
     <>
       <Head>
-        <title>{"Next with Material-ui Preact Starter" + getTitle()}</title>
+        <title>{getTitle()}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
