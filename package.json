@@ -1,6 +1,6 @@
 {
   "name": "next-with-materialui-preact-starter",
-  "version": "0.1.0",
+  "version": "1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,9 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "11.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@material-ui/core": "next",
+    "next": "^11.1.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-plugin-preact": "^3.0.6",
+    "next-transpile-modules": "^8.0.0",
+    "preact": "^10.5.14",
+    "preact-render-to-string": "^5.1.19",
+    "react": "npm:@preact/compat@^17.0.2",
+    "react-dom": "npm:@preact/compat@^17.0.2",
+    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.2.0"
   },
   "devDependencies": {
     "@types/react": "17.0.18",
