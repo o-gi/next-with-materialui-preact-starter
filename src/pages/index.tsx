@@ -1,6 +1,6 @@
+import Layout from "@/components/Layouts/Layout";
 import { Box, Typography } from "@material-ui/core";
 import type { NextPage } from "next";
-import Layout from "../components/Layouts/Layout";
 
 const HomePage: NextPage = () => {
   return (
